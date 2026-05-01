@@ -1,0 +1,94 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes orangePulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(255, 106, 0, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 26px rgba(255, 106, 0, 0.3);
+  }
+}
+
+@keyframes counterUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.7s ease forwards;
+  animation-delay: var(--animate-delay, 0s);
+}
+
+.animate-slide-left.is-visible {
+  animation: slideInLeft 0.75s ease forwards;
+  animation-delay: var(--animate-delay, 0s);
+}
+
+.pulse-orange {
+  animation: orangePulse 2.4s ease-in-out infinite;
+}
+
+.counter-animate.is-visible {
+  animation: counterUp 0.65s ease forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-on-scroll,
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
