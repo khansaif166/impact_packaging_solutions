@@ -25,16 +25,16 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/inner-pages.css">
   </head>
-  <body>
+  <body class="inner-page">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header" data-site-header>
       <div class="container site-header__inner">
         <a class="site-header__brand nav-logo" href="index.html" aria-label="Impact Packaging Solutions">
-          <svg viewBox="0 0 200 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g><circle cx="24" cy="24" r="20" stroke="#FF6A00" stroke-width="2.5" fill="none"/><circle cx="24" cy="24" r="8" fill="#FF6A00" opacity="0.9"/><rect x="21" y="6" width="6" height="36" rx="1" fill="#1A1A1F" transform="rotate(-15 24 24)"/><path d="M 8 36 Q 24 44 40 36" stroke="#00AACC" stroke-width="2.5" fill="none" stroke-linecap="round"/></g><text x="52" y="22" font-family="'Barlow Condensed', sans-serif" font-weight="800" font-size="22" fill="#1A1A1F" letter-spacing="2">IMPACT</text><text x="52" y="36" font-family="'Barlow Condensed', sans-serif" font-weight="500" font-size="11" fill="#00AACC" letter-spacing="3">PACKAGING SOLUTIONS</text><line x1="52" y1="25" x2="190" y2="25" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/></svg>
+          <svg viewBox="0 0 200 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><g><circle cx="24" cy="24" r="20" stroke="#FF6A00" stroke-width="2.5" fill="none"/><circle cx="24" cy="24" r="8" fill="#FF6A00" opacity="0.9"/><rect x="21" y="6" width="6" height="36" rx="1" fill="#1A1A1F" transform="rotate(-15 24 24)"/><path d="M 8 36 Q 24 44 40 36" stroke="#1B2B6B" stroke-width="2.5" fill="none" stroke-linecap="round"/></g><text x="52" y="22" font-family="'Barlow Condensed', sans-serif" font-weight="800" font-size="22" fill="#1A1A1F" letter-spacing="2">IMPACT</text><text x="52" y="36" font-family="'Barlow Condensed', sans-serif" font-weight="500" font-size="11" fill="#1B2B6B" letter-spacing="3">PACKAGING SOLUTIONS</text><line x1="52" y1="25" x2="190" y2="25" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/></svg>
         </a>
         <nav class="site-header__nav" aria-label="Primary navigation">
           <ul class="site-header__menu">
-            <li><a class="site-header__link" data-nav-link href="index.html#solutions">Solutions</a></li>
+            <li><a class="site-header__link" data-nav-link href="index.html">Home</a></li>
             <li><a class="site-header__link" data-nav-link href="products.html">Products</a></li>
             <li><a class="site-header__link" data-nav-link href="capabilities.html">Capabilities</a></li>
             <li><a class="site-header__link" data-nav-link href="industries.html">Industries</a></li>
@@ -47,7 +47,7 @@
     </header>
     <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
       <div class="mobile-menu__panel">
-        <nav class="mobile-menu__nav" aria-label="Mobile navigation"><ul class="mobile-menu__list"><li><a class="mobile-menu__link" data-nav-link href="index.html#solutions">Solutions</a></li><li><a class="mobile-menu__link" data-nav-link href="products.html">Products</a></li><li><a class="mobile-menu__link" data-nav-link href="capabilities.html">Capabilities</a></li><li><a class="mobile-menu__link" data-nav-link href="industries.html">Industries</a></li><li><a class="mobile-menu__link" data-nav-link href="about.html">About</a></li><li><a class="mobile-menu__link" data-nav-link href="contact.html">Contact</a></li></ul></nav>
+        <nav class="mobile-menu__nav" aria-label="Mobile navigation"><ul class="mobile-menu__list"><li><a class="mobile-menu__link" data-nav-link href="index.html">Home</a></li><li><a class="mobile-menu__link" data-nav-link href="products.html">Products</a></li><li><a class="mobile-menu__link" data-nav-link href="capabilities.html">Capabilities</a></li><li><a class="mobile-menu__link" data-nav-link href="industries.html">Industries</a></li><li><a class="mobile-menu__link" data-nav-link href="about.html">About</a></li><li><a class="mobile-menu__link" data-nav-link href="contact.html">Contact</a></li></ul></nav>
         <a class="btn-primary mobile-menu__cta" href="contact.html">Request a Quote</a>
       </div>
     </div>
@@ -87,7 +87,9 @@
             <p class="section-subtitle">Print process, color count, and production method details will be finalized with client confirmation. Current placeholders cover rotogravure, flexographic, and up to 10-color print references.</p>
             <p class="body-copy" style="margin-top: 20px;">[Placeholder for approved print specifications, surface finish options, and sample application details.]</p>
           </div>
-          <div class="placeholder-media animate-on-scroll" style="--animate-delay: 0.08s;"><span class="placeholder-media__label">Printed Film Samples Placeholder</span></div>
+          <figure class="capability-visual animate-on-scroll" style="--animate-delay: 0.08s;">
+            <img src="assets/images/products/capabilities.png" alt="Flexible packaging products and printed film samples" class="capability-visual__image" loading="lazy">
+          </figure>
         </div>
       </section>
 

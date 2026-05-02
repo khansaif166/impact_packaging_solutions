@@ -330,6 +330,59 @@
     });
   }
 
+  function initHeroCarousel() {
+    const carousel = document.querySelector(".hero-carousel");
+    const slides = carousel ? carousel.querySelectorAll(".hero-slide") : [];
+    const dots = carousel ? carousel.querySelectorAll(".carousel-dot") : [];
+
+    if (!carousel || !slides.length || prefersReducedMotion) {
+      return;
+    }
+
+    let current = 0;
+    let timer;
+
+    function setActive(index) {
+      slides[current].classList.remove("active");
+      if (dots[current]) {
+        dots[current].classList.remove("active");
+      }
+
+      current = index;
+      slides[current].classList.add("active");
+      if (dots[current]) {
+        dots[current].classList.add("active");
+      }
+    }
+
+    function nextSlide() {
+      setActive((current + 1) % slides.length);
+    }
+
+    function startTimer() {
+      stopTimer();
+      timer = window.setInterval(nextSlide, 4000);
+    }
+
+    function stopTimer() {
+      if (timer) {
+        window.clearInterval(timer);
+      }
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        stopTimer();
+        setActive(index);
+        startTimer();
+      });
+    });
+
+    carousel.addEventListener("mouseenter", stopTimer);
+    carousel.addEventListener("mouseleave", startTimer);
+    startTimer();
+  }
+
   updateScrolledState();
   window.addEventListener("scroll", updateScrolledState, { passive: true });
 
@@ -339,4 +392,5 @@
   setupActiveNavLink();
   setupProductFilters();
   setupContactForm();
+  initHeroCarousel();
 })();

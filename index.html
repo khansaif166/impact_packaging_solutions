@@ -52,17 +52,17 @@
               <circle cx="24" cy="24" r="20" stroke="#FF6A00" stroke-width="2.5" fill="none"/>
               <circle cx="24" cy="24" r="8" fill="#FF6A00" opacity="0.9"/>
               <rect x="21" y="6" width="6" height="36" rx="1" fill="#1A1A1F" transform="rotate(-15 24 24)"/>
-              <path d="M 8 36 Q 24 44 40 36" stroke="#00AACC" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M 8 36 Q 24 44 40 36" stroke="#1B2B6B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
             </g>
             <text x="52" y="22" font-family="'Barlow Condensed', sans-serif" font-weight="800" font-size="22" fill="#1A1A1F" letter-spacing="2">IMPACT</text>
-            <text x="52" y="36" font-family="'Barlow Condensed', sans-serif" font-weight="500" font-size="11" fill="#00AACC" letter-spacing="3">PACKAGING SOLUTIONS</text>
+            <text x="52" y="36" font-family="'Barlow Condensed', sans-serif" font-weight="500" font-size="11" fill="#1B2B6B" letter-spacing="3">PACKAGING SOLUTIONS</text>
             <line x1="52" y1="25" x2="190" y2="25" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
           </svg>
         </a>
 
         <nav class="site-header__nav" aria-label="Primary navigation">
           <ul class="site-header__menu">
-            <li><a class="site-header__link" data-nav-link href="#solutions">Solutions</a></li>
+            <li><a class="site-header__link" data-nav-link href="index.html">Home</a></li>
             <li><a class="site-header__link" data-nav-link href="products.html">Products</a></li>
             <li><a class="site-header__link" data-nav-link href="capabilities.html">Capabilities</a></li>
             <li><a class="site-header__link" data-nav-link href="industries.html">Industries</a></li>
@@ -93,7 +93,7 @@
       <div class="mobile-menu__panel">
         <nav class="mobile-menu__nav" aria-label="Mobile navigation">
           <ul class="mobile-menu__list">
-            <li><a class="mobile-menu__link" data-nav-link href="#solutions">Solutions</a></li>
+            <li><a class="mobile-menu__link" data-nav-link href="index.html">Home</a></li>
             <li><a class="mobile-menu__link" data-nav-link href="products.html">Products</a></li>
             <li><a class="mobile-menu__link" data-nav-link href="capabilities.html">Capabilities</a></li>
             <li><a class="mobile-menu__link" data-nav-link href="industries.html">Industries</a></li>
@@ -107,60 +107,129 @@
     </div>
 
     <main id="main-content">
-      <section class="hero diagonal-bottom">
-        <div class="container hero__layout">
-          <div class="hero__content animate-on-scroll">
-            <p class="hero__label">Protect. Perform. Impact.</p>
-            <h1 class="hero__title">
-              Packaging That<br>
-              Performs and<br>
-              <span class="hero__title-accent">Stands Out.</span>
-            </h1>
-            <p class="hero__subtitle">
-              Flexible packaging solutions that protect your product, drive efficiency, and create
-              shelf impact.
-            </p>
-            <div class="hero__actions">
-              <a class="btn-primary" href="#solutions">Explore Solutions</a>
-              <a class="btn-ghost" href="capabilities.html">
-                Our Capabilities
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    fill="currentColor"
-                    d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-            <div class="hero__trust" aria-label="Trust highlights">
-              <span class="hero__trust-item">[Years Experience TBD]</span>
-              <span class="hero__trust-item">[Products Delivered TBD]</span>
-              <span class="hero__trust-item">[Supply Coverage TBD]</span>
-            </div>
-          </div>
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <img
+            src="assets/images/hero-products.png"
+            alt=""
+            class="hero-bg-img"
+            loading="eager"
+            fetchpriority="high"
+          >
+        </div>
 
-          <div class="hero__visual-wrap animate-on-scroll" style="--animate-delay: 0.15s;">
-            <div class="hero__visual-shell">
-              <div class="hero__visual-stage">
-                <div class="hero__right-overlay"></div>
-                <picture>
-                  <img
-                    src="assets/images/hero-product.png"
-                    alt="Impact Packaging Solutions flexible packaging pouches and label roll products"
-                    class="hero-product-img"
-                    loading="eager"
-                    fetchpriority="high"
-                    width="680"
-                    height="520"
-                  >
-                </picture>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <div class="container">
+            <div class="hero-text-block animate-on-scroll">
+              <span class="hero-label">Protect. Perform. Impact.</span>
+              <h1 class="hero-headline">
+                Packaging That<br>
+                Performs and<br>
+                <span class="highlight">Stands Out.</span>
+              </h1>
+              <p class="hero-subtitle">
+                Flexible packaging solutions that protect your product, drive efficiency, and create
+                shelf impact.
+              </p>
+              <div class="hero-ctas">
+                <a class="btn-primary" href="products.html">Explore Solutions</a>
+                <a class="btn-ghost-dark" href="capabilities.html">Our Capabilities →</a>
+              </div>
+              <div class="hero-trust" aria-label="Trust highlights">
+                <span class="trust-item">[Years Experience TBD]</span>
+                <span class="trust-dot">●</span>
+                <span class="trust-item">[Products Delivered TBD]</span>
+                <span class="trust-dot">●</span>
+                <span class="trust-item">[Supply Coverage TBD]</span>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="hero-corner-triangles" aria-hidden="true">
+          <div class="triangle triangle-1"></div>
+          <div class="triangle triangle-2"></div>
+        </div>
       </section>
 
-      <section class="section pillars" id="solutions">
+      <div class="showcase-strip">
+        <div class="showcase-label">
+          <span>Our Packaging in Action</span>
+          <span class="showcase-arrow">→</span>
+        </div>
+        <div class="showcase-track-wrapper">
+          <div class="showcase-track">
+            <div class="showcase-item">
+              <img src="assets/images/products/showcase-1.png" alt="Herbal soup stand-up pouch packaging">
+              <span class="showcase-caption">Stand-Up Pouch</span>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/products/showcase-2.png" alt="Snack packaging flexible pouch">
+              <span class="showcase-caption">3-Side Seal Pouch</span>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/products/showcase-3.png" alt="Personal care laminate packaging">
+              <span class="showcase-caption">Laminate Roll</span>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/products/showcase-4.png" alt="Juice spout pouch packaging">
+              <span class="showcase-caption">Spout Pouch</span>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/products/showcase-5.png" alt="Spice zipper pouch packaging">
+              <span class="showcase-caption">Center Seal Pouch</span>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/products/showcase-6.png" alt="Wellness product flexible packaging">
+              <span class="showcase-caption">Flat Bottom Pouch</span>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/products/showcase-7.png" alt="Agriculture and seeds flexible packaging bag">
+              <span class="showcase-caption">Gusseted Bag</span>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/images/products/showcase-8.png" alt="Printed laminate roll stock packaging">
+              <span class="showcase-caption">Printed Roll Stock</span>
+            </div>
+            <div class="showcase-item" aria-hidden="true">
+              <img src="assets/images/products/showcase-1.png" alt="">
+              <span class="showcase-caption">Stand-Up Pouch</span>
+            </div>
+            <div class="showcase-item" aria-hidden="true">
+              <img src="assets/images/products/showcase-2.png" alt="">
+              <span class="showcase-caption">3-Side Seal Pouch</span>
+            </div>
+            <div class="showcase-item" aria-hidden="true">
+              <img src="assets/images/products/showcase-3.png" alt="">
+              <span class="showcase-caption">Laminate Roll</span>
+            </div>
+            <div class="showcase-item" aria-hidden="true">
+              <img src="assets/images/products/showcase-4.png" alt="">
+              <span class="showcase-caption">Spout Pouch</span>
+            </div>
+            <div class="showcase-item" aria-hidden="true">
+              <img src="assets/images/products/showcase-5.png" alt="">
+              <span class="showcase-caption">Center Seal Pouch</span>
+            </div>
+            <div class="showcase-item" aria-hidden="true">
+              <img src="assets/images/products/showcase-6.png" alt="">
+              <span class="showcase-caption">Flat Bottom Pouch</span>
+            </div>
+            <div class="showcase-item" aria-hidden="true">
+              <img src="assets/images/products/showcase-7.png" alt="">
+              <span class="showcase-caption">Gusseted Bag</span>
+            </div>
+            <div class="showcase-item" aria-hidden="true">
+              <img src="assets/images/products/showcase-8.png" alt="">
+              <span class="showcase-caption">Printed Roll Stock</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <section class="section pillars" id="solutions">
         <div class="container">
           <div class="pillars__grid">
             <article class="card-capability pillar-card animate-on-scroll" style="--animate-delay: 0s;">
@@ -212,7 +281,7 @@
             </article>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="section products-preview" id="products-preview">
         <div class="container">
@@ -230,114 +299,105 @@
 
           <div class="products-grid">
             <article class="card-product product-card animate-on-scroll" data-product="laminate-films">
-              <div class="product-card__media">
-                <div class="product-card__icon-wrap">
-                  <svg class="product-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M4 7h16v10H4zM2 9h2v6H2zm18 0h2v6h-2z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <span class="product-card__tag">Roll Stock</span>
-                </div>
+              <div class="product-card__image">
+                <img src="assets/images/products/Laminate%20Rolls.png" alt="Laminate rolls packaging" loading="lazy">
               </div>
-              <h3>Laminate Films</h3>
-              <p>Multi-layer laminate films for food, pharma, and FMCG applications.</p>
-              <a class="btn-ghost" href="products.html">
-                Learn More
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
-                </svg>
-              </a>
+              <div class="product-card__body">
+                <span class="product-card__tag">Roll Stock</span>
+                <h3>Laminate Rolls</h3>
+                <p>Multi-layer laminate films for food, pharma, and FMCG applications.</p>
+                <a class="btn-ghost" href="products.html">
+                  Learn More
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
+                  </svg>
+                </a>
+              </div>
             </article>
 
             <article class="card-product product-card animate-on-scroll" data-product="stand-up-pouches" style="--animate-delay: 0.05s;">
-              <div class="product-card__media">
-                <div class="product-card__icon-wrap">
-                  <svg class="product-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M6 4h12l-1 16H7L6 4Zm2 2 .6 12h6.8L16 6H8Z"></path>
-                  </svg>
-                </div>
+              <div class="product-card__image">
+                <img src="assets/images/products/Center%20Seal%20Pouches.png" alt="Center seal pouches packaging" loading="lazy">
               </div>
-              <h3>Stand-Up Pouches</h3>
-              <p>Versatile, shelf-ready pouches with superior barrier properties.</p>
-              <a class="btn-ghost" href="products.html">
-                Learn More
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
-                </svg>
-              </a>
+              <div class="product-card__body">
+                <span class="product-card__tag">Pouches</span>
+                <h3>Center Seal Pouches</h3>
+                <p>Versatile, shelf-ready pouches with superior barrier properties.</p>
+                <a class="btn-ghost" href="products.html">
+                  Learn More
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
+                  </svg>
+                </a>
+              </div>
             </article>
 
             <article class="card-product product-card animate-on-scroll" data-product="zipper-pouches" style="--animate-delay: 0.1s;">
-              <div class="product-card__media">
-                <div class="product-card__icon-wrap">
-                  <svg class="product-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 4h10l-1 16H8L7 4Zm4 2v3h2V6h-2Zm0 4v3h2v-3h-2Z"></path>
-                  </svg>
-                </div>
+              <div class="product-card__image">
+                <img src="assets/images/products/3-Side%20Seal%20Pouches.png" alt="Three-side seal pouch packaging" loading="lazy">
               </div>
-              <h3>Zipper Pouches</h3>
-              <p>Resealable packaging for consumer convenience and extended freshness.</p>
-              <a class="btn-ghost" href="products.html">
-                Learn More
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
-                </svg>
-              </a>
+              <div class="product-card__body">
+                <span class="product-card__tag">Pouches</span>
+                <h3>3-Side Seal Pouches</h3>
+                <p>Resealable packaging for consumer convenience and extended freshness.</p>
+                <a class="btn-ghost" href="products.html">
+                  Learn More
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
+                  </svg>
+                </a>
+              </div>
             </article>
 
             <article class="card-product product-card animate-on-scroll" data-product="three-side-seal-pouches" style="--animate-delay: 0.15s;">
-              <div class="product-card__media">
-                <div class="product-card__icon-wrap">
-                  <svg class="product-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M6 4h12v16H6zm2 2v12h8V6H8Z"></path>
-                  </svg>
-                </div>
+              <div class="product-card__image">
+                <img src="assets/images/products/Stand-Up%20Pouches.png" alt="Stand-up pouch packaging" loading="lazy">
               </div>
-              <h3>3-Side Seal Pouches</h3>
-              <p>Economical flat pouches for a wide range of product applications.</p>
-              <a class="btn-ghost" href="products.html">
-                Learn More
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
-                </svg>
-              </a>
+              <div class="product-card__body">
+                <span class="product-card__tag">Pouches</span>
+                <h3>Stand-Up Pouches</h3>
+                <p>Economical flat pouches for a wide range of product applications.</p>
+                <a class="btn-ghost" href="products.html">
+                  Learn More
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
+                  </svg>
+                </a>
+              </div>
             </article>
 
             <article class="card-product product-card animate-on-scroll" data-product="roll-stock" style="--animate-delay: 0.2s;">
-              <div class="product-card__media">
-                <div class="product-card__icon-wrap">
-                  <svg class="product-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 4a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 4a4 4 0 1 1-4 4 4 4 0 0 1 4-4Z"></path>
-                  </svg>
-                </div>
+              <div class="product-card__image">
+                <img src="assets/images/products/Zipper%20Pouches.png" alt="Zipper pouch packaging" loading="lazy">
               </div>
-              <h3>Roll Stock</h3>
-              <p>Pre-made flexible film rolls ready for your form-fill-seal machines.</p>
-              <a class="btn-ghost" href="products.html">
-                Learn More
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
-                </svg>
-              </a>
+              <div class="product-card__body">
+                <span class="product-card__tag">Pouches</span>
+                <h3>Zipper Pouches</h3>
+                <p>Resealable packaging for consumer convenience and extended freshness.</p>
+                <a class="btn-ghost" href="products.html">
+                  Learn More
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
+                  </svg>
+                </a>
+              </div>
             </article>
 
             <article class="card-product product-card animate-on-scroll" data-product="custom-packaging" style="--animate-delay: 0.25s;">
-              <div class="product-card__media">
-                <div class="product-card__icon-wrap">
-                  <svg class="product-card__icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.18L18.74 8 12 11.82 5.26 8 12 4.18ZM5 9.72l6 3.39v6.71l-6-3.33V9.72Zm8 10.1v-6.71l6-3.39v6.77l-6 3.33Z"></path>
-                  </svg>
-                </div>
+              <div class="product-card__image">
+                <img src="assets/images/products/Custom%20Packaging.png" alt="Custom packaging product lineup" loading="lazy">
               </div>
-              <h3>Custom Packaging</h3>
-              <p>Bespoke solutions designed from scratch for your specific product.</p>
-              <a class="btn-ghost" href="products.html">
-                Learn More
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
-                </svg>
-              </a>
+              <div class="product-card__body">
+                <span class="product-card__tag">Custom</span>
+                <h3>Custom Packaging</h3>
+                <p>Bespoke solutions designed from scratch for your specific product.</p>
+                <a class="btn-ghost" href="products.html">
+                  Learn More
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M13.2 5.2 20 12l-6.8 6.8-1.4-1.4 4.4-4.4H4v-2h12.2l-4.4-4.4Z"></path>
+                  </svg>
+                </a>
+              </div>
             </article>
           </div>
 
@@ -347,49 +407,122 @@
         </div>
       </section>
 
-      <section class="section industries" id="industries-home">
+      <section class="section section-industries" id="industries-home">
         <div class="container">
-          <span class="section-label">Industries</span>
-          <h2 class="section-title">Packaging Built for Your Industry</h2>
-          <span class="accent-line"></span>
-
-          <div class="industry-chips" aria-label="Industries served">
-            <span class="industry-chip"><span class="industry-chip__icon">🍕</span>Food &amp; Beverages</span>
-            <span class="industry-chip"><span class="industry-chip__icon">💊</span>Pharma &amp; Nutraceuticals</span>
-            <span class="industry-chip"><span class="industry-chip__icon">🧴</span>FMCG &amp; Personal Care</span>
-            <span class="industry-chip"><span class="industry-chip__icon">☕</span>Tea &amp; Coffee</span>
-            <span class="industry-chip"><span class="industry-chip__icon">🌾</span>Agro &amp; Seeds</span>
-            <span class="industry-chip"><span class="industry-chip__icon">🏭</span>Industrial</span>
+          <div class="section-header">
+            <span class="section-label">Industries</span>
+            <h2 class="section-title">Packaging Built for<br>Your Industry</h2>
+            <span class="accent-line"></span>
           </div>
 
-          <div class="industries__content">
-            <div class="industries__body animate-on-scroll">
-              We support diverse product categories with packaging formats tailored to compliance
-              needs, handling conditions, branding priorities, and operational realities. From
-              food-grade applications to performance-driven industrial packs, every structure is
-              developed to align with your product and process requirements.
-            </div>
+          <div class="industries-grid">
+            <article class="industry-card animate-on-scroll">
+              <div class="industry-card-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M16 4C10 4 6 9 6 15c0 4 2 7 5 9h10c3-2 5-5 5-9 0-6-4-11-10-11z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M16 4v20M10 10l6 4M22 10l-6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Food &amp; Beverages</h3>
+              <p class="industry-card-desc">Snacks, spices, dairy, oils, sauces and ready-to-eat products</p>
+              <div class="industry-card-tags">
+                <span>Stand-Up Pouches</span>
+                <span>Barrier Films</span>
+                <span>Roll Stock</span>
+              </div>
+            </article>
 
-            <ul class="check-list animate-on-scroll" style="--animate-delay: 0.12s;">
-              <li>
-                <svg class="check-list__icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M9.55 17.2 4.8 12.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"></path>
+            <article class="industry-card animate-on-scroll" style="--animate-delay: 0.05s;">
+              <div class="industry-card-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="10" y="4" width="12" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M13 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="2"/>
+                  <path d="M13 12h6M13 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="22" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+                  <path d="M22 22v2l1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
-                Food-grade materials and compliance options subject to client requirement confirmation
-              </li>
-              <li>
-                <svg class="check-list__icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M9.55 17.2 4.8 12.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"></path>
+              </div>
+              <h3 class="industry-card-title">Pharma &amp; Nutraceuticals</h3>
+              <p class="industry-card-desc">Supplement sachets, blister backing, high-barrier pharma pouches</p>
+              <div class="industry-card-tags">
+                <span>Alu-Alu Films</span>
+                <span>Sachets</span>
+                <span>Blister Films</span>
+              </div>
+            </article>
+
+            <article class="industry-card animate-on-scroll" style="--animate-delay: 0.1s;">
+              <div class="industry-card-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M8 8h16v16a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V8z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M6 8h20M12 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M13 14c0 1.5 6 1.5 6 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 </svg>
-                Barrier film configurations suitable for regulated and sensitive product categories
-              </li>
-              <li>
-                <svg class="check-list__icon" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M9.55 17.2 4.8 12.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"></path>
+              </div>
+              <h3 class="industry-card-title">FMCG &amp; Personal Care</h3>
+              <p class="industry-card-desc">Shampoo, detergent, cosmetics and daily consumer product packaging</p>
+              <div class="industry-card-tags">
+                <span>Spout Pouches</span>
+                <span>Laminates</span>
+                <span>Shrink Films</span>
+              </div>
+            </article>
+
+            <article class="industry-card animate-on-scroll" style="--animate-delay: 0.15s;">
+              <div class="industry-card-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M6 26c0-5 4-10 10-10s10 5 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="16" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                  <path d="M10 26V20M22 26V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 </svg>
-                Custom print programs to maintain consistent brand presentation across SKUs
-              </li>
-            </ul>
+              </div>
+              <h3 class="industry-card-title">Tea &amp; Coffee</h3>
+              <p class="industry-card-desc">Premium aroma-preserving pouches with degassing valves for freshness</p>
+              <div class="industry-card-tags">
+                <span>Aroma Barrier</span>
+                <span>Flat Bottom</span>
+                <span>Zipper Pouches</span>
+              </div>
+            </article>
+
+            <article class="industry-card animate-on-scroll" style="--animate-delay: 0.2s;">
+              <div class="industry-card-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M16 4l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M8 24c2 2 5 4 8 4s6-2 8-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Agro &amp; Seeds</h3>
+              <p class="industry-card-desc">Moisture-resistant, UV-barrier packaging for seeds, grains and agro products</p>
+              <div class="industry-card-tags">
+                <span>Side Gusset</span>
+                <span>UV Barrier</span>
+                <span>Heavy Duty</span>
+              </div>
+            </article>
+
+            <article class="industry-card animate-on-scroll" style="--animate-delay: 0.25s;">
+              <div class="industry-card-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="4" y="14" width="24" height="14" rx="1" stroke="currentColor" stroke-width="2"/>
+                  <path d="M4 18h24M10 14V10a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="16" cy="22" r="2" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3 class="industry-card-title">Industrial</h3>
+              <p class="industry-card-desc">Heavy-duty laminate films and bulk flexible packaging for industrial goods</p>
+              <div class="industry-card-tags">
+                <span>Heavy Laminates</span>
+                <span>Bulk Packaging</span>
+                <span>Custom Films</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="industries-footer-note">
+            <p>
+              Don't see your industry? <a href="contact.html">Talk to us →</a> We manufacture custom packaging for any product category.
+            </p>
           </div>
         </div>
       </section>
