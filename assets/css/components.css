@@ -332,7 +332,7 @@
   width: auto;
 }
 
-.nav-logo svg {
+.nav-logo img {
   display: block;
   width: auto;
   height: 44px;
@@ -341,48 +341,18 @@
     height var(--transition-fast);
 }
 
-.nav-logo:hover svg,
-.nav-logo:focus-visible svg {
+.nav-logo:hover img,
+.nav-logo:focus-visible img {
   opacity: 0.85;
 }
 
-.site-header.scrolled .nav-logo svg {
+.site-header.scrolled .nav-logo img {
   height: 36px;
 }
 
 body.inner-page .site-header:not(.scrolled) .site-header__link,
 body.inner-page .site-header:not(.scrolled) .nav-toggle {
   color: rgba(255, 255, 255, 0.76);
-}
-
-body.inner-page .site-header:not(.scrolled) .site-header__link:hover,
-body.inner-page .site-header:not(.scrolled) .site-header__link:focus-visible,
-body.inner-page .site-header:not(.scrolled) .site-header__link.is-active,
-body.inner-page .site-header:not(.scrolled) .site-header__link[aria-current="page"] {
-  color: var(--color-text-on-dark);
-}
-
-body.inner-page .site-header:not(.scrolled) .nav-logo text:first-of-type {
-  fill: var(--color-text-on-dark);
-}
-
-body.inner-page .site-header:not(.scrolled) .nav-logo text:last-of-type {
-  fill: var(--color-text-on-dark);
-  opacity: 0.72;
-}
-
-body.inner-page .site-header:not(.scrolled) .nav-logo path {
-  stroke: var(--color-text-on-dark);
-  opacity: 0.72;
-}
-
-body.inner-page .site-header:not(.scrolled) .nav-logo rect {
-  fill: var(--color-text-on-dark);
-  opacity: 0.92;
-}
-
-body.inner-page .site-header:not(.scrolled) .nav-logo line {
-  stroke: rgba(255, 255, 255, 0.18);
 }
 
 body.inner-page .site-header:not(.scrolled)::before {
