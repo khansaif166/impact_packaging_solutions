@@ -38,25 +38,23 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/inner-pages.css">
     <link rel="stylesheet" href="assets/css/contact.css">
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
   </head>
   <body class="contact-page inner-page">
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="site-header" data-site-header>
       <div class="container site-header__inner">
-        <a class="site-header__brand nav-logo" href="index.html" aria-label="Impact Packaging Solutions">
-          <svg viewBox="0 0 200 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <g>
-              <circle cx="24" cy="24" r="20" stroke="#FF6A00" stroke-width="2.5" fill="none"/>
-              <circle cx="24" cy="24" r="8" fill="#FF6A00" opacity="0.9"/>
-              <rect x="21" y="6" width="6" height="36" rx="1" fill="#1A1A1F" transform="rotate(-15 24 24)"/>
-              <path d="M 8 36 Q 24 44 40 36" stroke="#1B2B6B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            </g>
-            <text x="52" y="22" font-family="'Barlow Condensed', sans-serif" font-weight="800" font-size="22" fill="#1A1A1F" letter-spacing="2">IMPACT</text>
-            <text x="52" y="36" font-family="'Barlow Condensed', sans-serif" font-weight="500" font-size="11" fill="#1B2B6B" letter-spacing="3">PACKAGING SOLUTIONS</text>
-            <line x1="52" y1="25" x2="190" y2="25" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/></svg>
+        <a href="index.html" class="nav-logo">
+          <img class="nav-logo__image"
+               src="assets/images/logo.png"
+               data-logo-default="assets/images/logo.png"
+               data-logo-inverse="assets/images/logo-white.png"
+               alt="Impact Packaging Solutions"
+               height="56"
+               width="auto"
+               loading="eager">
         </a>
 
         <nav class="site-header__nav" aria-label="Primary navigation">
@@ -110,8 +108,8 @@
           <div class="contact-hero__content animate-on-scroll">
             <span class="section-label">Request a Quote</span>
             <h1 class="section-title">Let's Build Your Packaging Solution</h1>
-            <p class="section-subtitle">
-              Share your requirements. We'll get back within 24 hours with a tailored quote.
+            <p class="hero-section-subtitle contact-hero__subtitle">
+              Share your requirements and we'll get back within 24 hours with a tailored quote.
             </p>
             <span class="accent-line" style="margin-left: auto; margin-right: auto;"></span>
           </div>
@@ -199,7 +197,7 @@
                         name="Message / Specific Requirements"
                         rows="5"
                         data-message-field
-                        placeholder="Tell us about your packaging format, application, size, barrier needs, print requirements, or quantity expectations."
+                        placeholder="Tell us about your packaging format, application, size, material needs, design requirements, or quantity expectations."
                       ></textarea>
                     </div>
                   </div>
@@ -297,12 +295,12 @@
       <section class="section contact-map">
         <div class="container">
           <div class="contact-map__header animate-on-scroll">
-            <span class="section-label">Map Placeholder</span>
-            <h2 class="contact-map__title">Google Map Embed</h2>
-            <p class="section-subtitle">The embed source can be replaced once the final approved Google Maps embed URL is provided.</p>
+            <span class="section-label">Our Location</span>
+            <h2 class="contact-map__title">Find Us in Vapi</h2>
+            <p class="section-subtitle">Visit Impact Packaging Solutions at Sunshine Complex, Vapi Char Rasta, or open the location in Google Maps for directions.</p>
           </div>
           <div class="contact-map__frame animate-on-scroll" style="--animate-delay: 0.08s;">
-            <div class="contact-map__placeholder" role="img" aria-label="Google Maps embed placeholder for Impact Packaging Solutions">
+            <div class="contact-map__placeholder" role="img" aria-label="Map location for Impact Packaging Solutions">
               <div class="contact-map__placeholder-grid"></div>
               <div class="contact-map__placeholder-content">
                 <div class="contact-map__pin">
@@ -310,15 +308,15 @@
                     <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.16 7 13 7 13s7-7.84 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/>
                   </svg>
                 </div>
-                <h3 class="contact-map__placeholder-title">Map Embed Placeholder</h3>
-                <p class="contact-map__placeholder-copy">Replace this block with the final Google Maps embed URL when the client shares the approved map embed code.</p>
+                <h3 class="contact-map__placeholder-title">Impact Packaging Solutions</h3>
+                <p class="contact-map__placeholder-copy">103 Sunshine Complex, Behind Indian Bank, Vapi Char Rasta - 396195</p>
                 <a
                   class="contact-map__placeholder-link"
                   href="https://www.google.com/maps/search/?api=1&amp;query=103+Sunshine+Complex+Behind+Indian+Bank+Vapi+Char+Rasta+396195"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Open Location in Google Maps
+                  Get Directions on Google Maps
                 </a>
               </div>
             </div>
@@ -332,8 +330,12 @@
         <div class="site-footer__top">
           <section aria-labelledby="footer-brand-heading">
             <h2 class="visually-hidden" id="footer-brand-heading">Impact Packaging Solutions</h2>
-            <a href="index.html" aria-label="Impact Packaging Solutions home">
-              <img class="site-footer__logo" src="assets/images/logo.png" alt="Impact Packaging Solutions Logo" width="1672" height="941">
+            <a href="index.html" class="footer-logo">
+              <img src="assets/images/logo-white.png"
+                   alt="Impact Packaging Solutions"
+                   height="44"
+                   width="auto"
+                   loading="lazy">
             </a>
             <p class="site-footer__tagline">Protect. Perform. Impact.</p>
             <p class="site-footer__description">
@@ -405,7 +407,7 @@
         </div>
 
         <div class="site-footer__bottom">
-          <p>&copy; 2025 Impact Packaging Solutions. All rights reserved.</p>
+          <p>&copy; 6 Impact Packaging Solutions. All rights reserved.</p>
           <div class="site-footer__bottom-links">
             <a href="privacy-policy.html">Privacy Policy</a>
             <a href="sitemap.xml">Sitemap</a>

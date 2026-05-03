@@ -36,10 +36,11 @@
   margin: 0 auto;
 }
 
+.products-hero .hero-section-subtitle,
 .products-hero .section-subtitle {
   margin-left: auto;
   margin-right: auto;
-  color: #b0b0b0;
+  color: #d8dbe5 !important;
 }
 
 .products-hero .section-title {
@@ -49,6 +50,10 @@
 .products-hero .section-label {
   color: var(--color-text-on-dark);
   opacity: 0.7;
+}
+
+.products-hero p {
+  color: #d8dbe5 !important;
 }
 
 .products-filter {

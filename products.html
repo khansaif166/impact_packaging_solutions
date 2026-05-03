@@ -37,8 +37,8 @@
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/products.css">
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -232,18 +232,15 @@
 
     <header class="site-header" data-site-header>
       <div class="container site-header__inner">
-        <a class="site-header__brand nav-logo" href="index.html" aria-label="Impact Packaging Solutions">
-          <svg viewBox="0 0 200 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <g>
-              <circle cx="24" cy="24" r="20" stroke="#FF6A00" stroke-width="2.5" fill="none"/>
-              <circle cx="24" cy="24" r="8" fill="#FF6A00" opacity="0.9"/>
-              <rect x="21" y="6" width="6" height="36" rx="1" fill="#1A1A1F" transform="rotate(-15 24 24)"/>
-              <path d="M 8 36 Q 24 44 40 36" stroke="#1B2B6B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            </g>
-            <text x="52" y="22" font-family="'Barlow Condensed', sans-serif" font-weight="800" font-size="22" fill="#1A1A1F" letter-spacing="2">IMPACT</text>
-            <text x="52" y="36" font-family="'Barlow Condensed', sans-serif" font-weight="500" font-size="11" fill="#1B2B6B" letter-spacing="3">PACKAGING SOLUTIONS</text>
-            <line x1="52" y1="25" x2="190" y2="25" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
-          </svg>
+        <a href="index.html" class="nav-logo">
+          <img class="nav-logo__image"
+               src="assets/images/logo.png"
+               data-logo-default="assets/images/logo.png"
+               data-logo-inverse="assets/images/logo-white.png"
+               alt="Impact Packaging Solutions"
+               height="56"
+               width="auto"
+               loading="eager">
         </a>
 
         <nav class="site-header__nav" aria-label="Primary navigation">
@@ -298,7 +295,7 @@
           <div class="products-hero__content animate-on-scroll">
             <span class="section-label">What We Make</span>
             <h1 class="section-title">Our Packaging Products</h1>
-            <p class="section-subtitle">
+            <p class="hero-section-subtitle">
               Purpose-built flexible packaging for every product, industry, and application.
             </p>
             <span class="accent-line" style="margin-left: auto; margin-right: auto;"></span>
@@ -329,11 +326,7 @@
                 <span class="product-listing-card__category">Pouches</span>
                 <h2 class="product-listing-card__title">Stand-Up Pouch</h2>
                 <p class="product-listing-card__description">Shelf-ready flexible pouches for strong on-pack visibility and adaptable barrier performance.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Stand-Up%20Pouch">Get Quote for This</a>
               </div>
             </article>
@@ -346,11 +339,7 @@
                 <span class="product-listing-card__category">Pouches</span>
                 <h2 class="product-listing-card__title">Zipper Pouch</h2>
                 <p class="product-listing-card__description">Resealable pouch format designed for repeat use, product freshness, and consumer convenience.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Zipper%20Pouch">Get Quote for This</a>
               </div>
             </article>
@@ -363,11 +352,7 @@
                 <span class="product-listing-card__category">Pouches</span>
                 <h2 class="product-listing-card__title">3-Side Seal Pouch</h2>
                 <p class="product-listing-card__description">Flat pouch format for compact packing, efficient storage, and broad product compatibility.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=3-Side%20Seal%20Pouch">Get Quote for This</a>
               </div>
             </article>
@@ -380,11 +365,7 @@
                 <span class="product-listing-card__category">Pouches</span>
                 <h2 class="product-listing-card__title">Center Seal Pouch</h2>
                 <p class="product-listing-card__description">Traditional seal-back pouch option for dependable pack integrity and streamlined production.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Center%20Seal%20Pouch">Get Quote for This</a>
               </div>
             </article>
@@ -397,11 +378,7 @@
                 <span class="product-listing-card__category">Pouches</span>
                 <h2 class="product-listing-card__title">Flat Bottom Pouch</h2>
                 <p class="product-listing-card__description">Premium pouch structure with strong shelf presence and increased usable pack volume.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Flat%20Bottom%20Pouch">Get Quote for This</a>
               </div>
             </article>
@@ -414,11 +391,7 @@
                 <span class="product-listing-card__category">Pouches</span>
                 <h2 class="product-listing-card__title">Spout Pouch</h2>
                 <p class="product-listing-card__description">Convenient dispensing pouch format suited for liquid, semi-liquid, and refill applications.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Spout%20Pouch">Get Quote for This</a>
               </div>
             </article>
@@ -431,11 +404,7 @@
                 <span class="product-listing-card__category">Pouches</span>
                 <h2 class="product-listing-card__title">4-Side Seal Pouch</h2>
                 <p class="product-listing-card__description">Structured pouch format offering clean panel space for graphics and reliable seal geometry.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=4-Side%20Seal%20Pouch">Get Quote for This</a>
               </div>
             </article>
@@ -448,11 +417,7 @@
                 <span class="product-listing-card__category">Films &amp; Laminates</span>
                 <h2 class="product-listing-card__title">BOPP Laminate Films</h2>
                 <p class="product-listing-card__description">Multi-purpose laminate structures built for print performance, conversion efficiency, and protection.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=BOPP%20Laminate%20Films">Get Quote for This</a>
               </div>
             </article>
@@ -469,11 +434,7 @@
                 <span class="product-listing-card__category">Films &amp; Laminates</span>
                 <h2 class="product-listing-card__title">Polyester (PET) Films</h2>
                 <p class="product-listing-card__description">PET-based flexible film options for enhanced stability, printability, and structure performance.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Polyester%20PET%20Films">Get Quote for This</a>
               </div>
             </article> -->
@@ -490,11 +451,7 @@
                 <span class="product-listing-card__category">Films &amp; Laminates</span>
                 <h2 class="product-listing-card__title">Metallized Films</h2>
                 <p class="product-listing-card__description">Reflective high-barrier film solutions suited for shelf impact and protective pack requirements.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Metallized%20Films">Get Quote for This</a>
               </div>
             </article> -->
@@ -507,11 +464,7 @@
                 <span class="product-listing-card__category">Films &amp; Laminates</span>
                 <h2 class="product-listing-card__title">Barrier Laminate Films</h2>
                 <p class="product-listing-card__description">Protective laminate combinations for applications that require elevated pack integrity and shelf life support.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Barrier%20Laminate%20Films">Get Quote for This</a>
               </div>
             </article>
@@ -524,11 +477,7 @@
                 <span class="product-listing-card__category">Films &amp; Laminates</span>
                 <h2 class="product-listing-card__title">Matte Finish Laminates</h2>
                 <p class="product-listing-card__description">Premium tactile laminate options created for understated shelf appeal and elevated brand presentation.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Matte%20Finish%20Laminates">Get Quote for This</a>
               </div>
             </article>
@@ -541,11 +490,7 @@
                 <span class="product-listing-card__category">Roll Stock</span>
                 <h2 class="product-listing-card__title">FFS Roll Stock</h2>
                 <p class="product-listing-card__description">Form-fill-seal compatible roll stock built for line efficiency and dependable conversion output.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=FFS%20Roll%20Stock">Get Quote for This</a>
               </div>
             </article>
@@ -558,11 +503,7 @@
                 <span class="product-listing-card__category">Roll Stock</span>
                 <h2 class="product-listing-card__title">Pre-made Film Rolls</h2>
                 <p class="product-listing-card__description">Customizable film roll solutions prepared for specific converting and packing line requirements.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-secondary product-listing-card__cta" href="contact.html?product=Pre-made%20Film%20Rolls">Get Quote for This</a>
               </div>
             </article>
@@ -575,11 +516,7 @@
                 <span class="product-listing-card__category">Custom</span>
                 <h2 class="product-listing-card__title">Custom Shaped Packaging</h2>
                 <p class="product-listing-card__description">Requirement-led packaging development for formats, finishes, and structures beyond standard catalog options.</p>
-                <div class="product-listing-card__specs">
-                  <span class="product-listing-card__spec"><strong>Barrier:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>Print:</strong> [TBD]</span>
-                  <span class="product-listing-card__spec"><strong>MOQ:</strong> [TBD]</span>
-                </div>
+                <div class="product-listing-card__specs"></div>
                 <a class="btn-primary product-listing-card__cta" href="contact.html?product=Custom%20Shaped%20Packaging">Enquire Now</a>
               </div>
             </article>
@@ -609,14 +546,12 @@
         <div class="site-footer__top">
           <section aria-labelledby="footer-brand-heading">
             <h2 class="visually-hidden" id="footer-brand-heading">Impact Packaging Solutions</h2>
-            <a href="index.html" aria-label="Impact Packaging Solutions home">
-              <img
-                class="site-footer__logo"
-                src="assets/images/logo.png"
-                alt="Impact Packaging Solutions Logo"
-                width="1672"
-                height="941"
-              >
+            <a href="index.html" class="footer-logo">
+              <img src="assets/images/logo-white.png"
+                   alt="Impact Packaging Solutions"
+                   height="44"
+                   width="auto"
+                   loading="lazy">
             </a>
             <p class="site-footer__tagline">Protect. Perform. Impact.</p>
             <p class="site-footer__description">
@@ -664,7 +599,7 @@
             <address class="site-footer__address">
               <ul class="site-footer__contact-list">
                 <li class="site-footer__contact-item"><span class="site-footer__contact-label">Address</span><span class="site-footer__contact-placeholder">103 Sunshine Complex, Behind Indian Bank, Vapi Char Rasta - 396195</span></li>
-                <li class="site-footer__contact-item"><span class="site-footer__contact-label">Phone</span><a class="site-footer__contact-placeholder" href="tel:+91+91 72279 87804">+91 72279 87804</a></li>
+                <li class="site-footer__contact-item"><span class="site-footer__contact-label">Phone</span><a class="site-footer__contact-placeholder" href="tel:+917227987804">+91 72279 87804</a></li>
                 <li class="site-footer__contact-item"><span class="site-footer__contact-label">Email</span><a class="site-footer__contact-placeholder" href="mailto:impactpackagingsolution@gmail.com">impactpackagingsolution@gmail.com</a></li>
               </ul>
             </address>
@@ -673,7 +608,7 @@
         </div>
 
         <div class="site-footer__bottom">
-          <p>&copy; 2025 Impact Packaging Solutions. All rights reserved.</p>
+          <p>&copy; 2026 Impact Packaging Solutions. All rights reserved.</p>
           <div class="site-footer__bottom-links">
             <a href="privacy-policy.html">Privacy Policy</a>
             <a href="sitemap.xml">Sitemap</a>

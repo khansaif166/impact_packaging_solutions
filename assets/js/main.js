@@ -9,7 +9,26 @@
     document.querySelector("[data-mobile-menu]") || document.querySelector(".mobile-menu");
   const mobileMenuLinks = mobileMenu ? mobileMenu.querySelectorAll("a[href]") : [];
   const scrolledClassTarget = header || document.body;
+  const navLogoImage = document.querySelector(".nav-logo__image");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function updateNavLogo() {
+    if (!navLogoImage) {
+      return;
+    }
+
+    const defaultLogo = navLogoImage.dataset.logoDefault || "assets/images/logo.png";
+    const inverseLogo = navLogoImage.dataset.logoInverse || "assets/images/logo-white.png";
+    const shouldUseInverse =
+      document.body.classList.contains("inner-page") &&
+      header &&
+      !header.classList.contains("scrolled");
+    const nextLogo = shouldUseInverse ? inverseLogo : defaultLogo;
+
+    if (navLogoImage.getAttribute("src") !== nextLogo) {
+      navLogoImage.setAttribute("src", nextLogo);
+    }
+  }
 
   function updateScrolledState() {
     if (!scrolledClassTarget) {
@@ -21,6 +40,8 @@
     } else {
       scrolledClassTarget.classList.remove("scrolled");
     }
+
+    updateNavLogo();
   }
 
   function setMenuState(isOpen) {

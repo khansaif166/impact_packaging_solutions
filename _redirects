@@ -1,4 +1,5 @@
-/home /index.html 301
-/products /products.html 301
-/about /about.html 301
-/contact /contact.html 301
+/products        /products.html    200
+/about           /about.html       200
+/capabilities    /capabilities.html 200
+/industries      /industries.html  200
+/contact         /contact.html     200
