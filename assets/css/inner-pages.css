@@ -100,8 +100,9 @@
   flex-wrap: wrap;
   gap: 12px 18px;
   margin-top: 26px;
-  color: var(--color-text-muted);
+  color: var(--color-accent-navy);
   font-size: 0.95rem;
+  font-weight: 700;
 }
 
 .inline-facts span:not(:last-child)::after {

@@ -123,10 +123,10 @@
 }
 
 .trust-item {
-  color: var(--color-text-muted);
+  color: var(--color-accent-navy);
   font-family: var(--font-body);
   font-size: 0.8125rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 
@@ -708,7 +708,8 @@
 .stat-card__label {
   display: block;
   margin-top: 10px;
-  color: var(--color-text-secondary);
+  color: var(--color-accent-navy);
+  font-weight: 700;
 }
 
 .why-impact__copy {
