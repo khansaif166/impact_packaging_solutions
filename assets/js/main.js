@@ -9,7 +9,8 @@
     document.querySelector("[data-mobile-menu]") || document.querySelector(".mobile-menu");
   const mobileMenuLinks = mobileMenu ? mobileMenu.querySelectorAll("a[href]") : [];
   const scrolledClassTarget = header || document.body;
-  const navLogoImage = document.querySelector(".nav-logo__image");
+  const navLogoImage =
+    document.querySelector(".nav-logo__wordmark") || document.querySelector(".nav-logo__image");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function updateNavLogo() {
@@ -17,8 +18,8 @@
       return;
     }
 
-    const defaultLogo = navLogoImage.dataset.logoDefault || "assets/images/logo.png";
-    const inverseLogo = navLogoImage.dataset.logoInverse || "assets/images/logo-white.png";
+    const defaultLogo = navLogoImage.dataset.logoDefault || "assets/images/optimized/logo.png";
+    const inverseLogo = navLogoImage.dataset.logoInverse || "assets/images/optimized/logo-white.png";
     const shouldUseInverse =
       document.body.classList.contains("inner-page") &&
       header &&
@@ -263,7 +264,7 @@
         } else if (normalizedProduct.includes("zipper")) {
           mappedValue = "Zipper Pouches";
         } else if (normalizedProduct.includes("roll")) {
-          mappedValue = "Roll Stock";
+          mappedValue = "Rolls  ";
         }
 
         productInterestField.value = mappedValue;
